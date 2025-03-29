@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网站</title>
+    <style>
+        /* CSS 样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            object-fit: cover;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到我的网站！</h1>
+        <img src="https://via.placeholder.com/200" alt="头像" class="photo">
+        <p>你好！我是小白，这是我的第一个网站。</p>
+        <p>我喜欢编程、摄影和旅行。</p>
+        
+        <h2>我的作品</h2>
+        <ul>
+            <li>作品1：<a href="#">点击查看</a></li>
+            <li>作品2：<a href="#">点击查看</a></li>
+        </ul>
+
+        <h2>联系我</h2>
+        <a href="mailto:your-email@example.com" class="button">发送邮件</a>
+        <a href="https://github.com/your-github" class="button" target="_blank">GitHub</a>
+    </div>
+
+    <script>
+        // 简单的交互效果
+        document.querySelector('h1').addEventListener('click', function() {
+            alert('你好！欢迎点击标题~');
+        });
+    </script>
+</body>
+</html>
